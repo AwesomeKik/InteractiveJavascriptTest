@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
+</head>
+<body onload = "tabindex()">
+	
+	<div id = "image">
+		<p id = "description">Hover over an image below to display here.</p>
+	</div>
+
+<div class="grid">
+	<img class = "preview" alt = "A sleeping cat." src = "images/catNap.jpg" onmouseover = "upDate(this)" onfocus = "upDate(this)" onmouseout = "unDo()" onblur="unDo()">
+	
+	<img class = "preview" alt = "A cute cat!" src = "images/cuteCat.jpg" onmouseover = "upDate(this)" onfocus = "upDate(this)" onmouseout = "unDo()" onblur="unDo()">
+	
+	<img class = "preview" src = "images/fatCat.jpg" alt = "a fat cat lying on the couch." onmouseover = "upDate(this)" onfocus = "upDate(this)" onmouseout = "unDo()" onblur="unDo()">
+
+    <img class = "preview" alt = "A kitten reaching for you!" src = "images/kittenReachingYou.jpg" onmouseover = "upDate(this)" onfocus = "upDate(this)" onmouseout = "unDo()" onblur="unDo()">
+	
+	<img class = "preview" alt = "a funny cat." src = "images/funnyCat.jpg" onmouseover = "upDate(this)" onfocus = "upDate(this)" onmouseout = "unDo()" onblur="unDo()">
+	
+	<img class = "preview" src = "images/fluffyPomeranian.jpg" alt = "A fluffly Pomeranian Dog." onmouseover = "upDate(this)" onfocus = "upDate(this)" onmouseout = "unDo()" onblur="unDo()">
+</div>
+
+</body>
+</html>

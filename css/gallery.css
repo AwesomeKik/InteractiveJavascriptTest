@@ -1,0 +1,157 @@
+/*Name this external file gallery.css*/
+body{
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+/*#image{
+line-height:650px;
+
+    width: 80%;
+height: 650px;
+    border:5px solid black;
+    border-radius: 10px;
+    margin:0 auto;
+background-color: #8e68ff;
+background-image: url('');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color:#FFFFFF;
+
+background-size: 100%;
+margin-bottom:25px;
+font-size: 150%;
+}
+
+#description p {
+    text-align: center;
+}*/
+
+#image {
+    display: flex; /* Enables flexible positioning */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
+    text-align: center;
+    line-height: normal; /* Prevents text from stretching */
+    padding: 10px; /* Adds space inside the div */
+    width: 80%;
+    height: 650px;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #8e68ff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 7vw; /* Makes font size responsive */
+}
+
+#description p {
+    text-align: center;
+    max-width: 90%; /* Ensures text does not overflow */
+    word-wrap: break-word; 
+}
+
+
+.grid{
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 10px;
+    column-gap: 10px;   
+    align-items: center;
+    margin-left:8%;
+
+}
+
+.preview{
+width: 70%;
+border: 5px solid black;
+margin: 1em;
+border-radius: 10px;
+}
+
+img{
+    width:100%;
+    opacity: 0.5;
+}
+
+img:hover, img:focus, .preview:hover, .preview:focus {
+    opacity: 1.0;
+    border: 5px solid orangered;
+}
+
+@media (min-width: 600px) {
+    #image {
+        font-size: 3vw;
+    }
+
+}
+
+@media (min-width: 772px) {
+
+    #image {
+        width: 50%;
+        font-size: 3vw;
+    }
+
+    .grid {
+        grid-template-columns: 20% 20% 20% 20%;
+    }
+
+    .preview {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 850px) {
+    #image {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    #image {
+        width: 35%;
+        height: 650px;
+    }
+
+    .grid {
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    }
+
+    .preview {
+        width: 50%;
+    }
+}
+
+/*Accessibility Media Queries*/
+
+@media (prefers-color-scheme: dark) {
+
+    body{
+
+        border: 1px solid whitesmoke;
+        background-color: rgb(33, 33, 33);
+    }
+
+    #image {
+        border:5px solid whitesmoke;
+        background-color: #7364a3;
+    }
+
+    .grid img {
+        border: 5px solid whitesmoke;
+
+    }
+
+    .label {
+        color: rgb(255, 200, 0);
+    }
+
+  }
